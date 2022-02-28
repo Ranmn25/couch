@@ -1,5 +1,28 @@
-<h1>Browse our therapists</h1>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm-8">
+    <h1>Browse our therapists</h1>
 
-<ul><% @therapists.each do |therapist| %>
-  <li><%= therapist.first_name %></li>
-<% end %></ul>
+    <%= form_tag therapists_path, method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "Find a therapist"
+      %>
+      <%= submit_tag "Search", class: "btn btn-primary" %>
+
+      <% end %>
+      <div id="therapists">
+        <% @therapists.each do |therapist| %>
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title"><%= therapist.first_name %> <%= therapist.last_name %></h4>
+            <%= link_to 'View full profile', therapist_path(therapist) %>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
