@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get '/therapist', to: 'therapists#index'
+  get '/therapist/:id' to: 'therapists#show'
 
 end
