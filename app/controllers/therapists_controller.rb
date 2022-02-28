@@ -1,6 +1,6 @@
 class TherapistsController < ApplicationController
   def show
-    @therapist = User.where(is_therapist: true)
+    @therapist = User.find(params[:id])
   end
 
   private
