@@ -1,5 +1,5 @@
 <h1>Browse our therapists</h1>
 
 <ul><% @therapists.each do |therapist| %>
-  <li><%= therapist.first_name %></li>
+  <li>Dr. <%= therapist.first_name %> <%= therapist.last_name %> <%= therapist.area_of_expertise %></li>
 <% end %></ul>
