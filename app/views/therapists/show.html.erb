@@ -1,4 +1,3 @@
-<h1>All the therapist</h1>
-<% @therapist.each do %>
-  <span><%= Dr.@therapist.first_name %> <%= @therapist.last_name %></span>
-<% end %>
+<h1>Dr. <%=@therapist.first_name %> <%= @therapist.last_name %></h1>
+<h3><%= @therapist.area_of_expertise %></h3>
+<p><%= @therapist.description %></p>
