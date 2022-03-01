@@ -10,6 +10,6 @@ class TherapistsController < ApplicationController
   private
 
   def therapist_paramas
-    params.require(:therapist).permit()
+    params.require(:therapist).permit
   end
 end
