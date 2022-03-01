@@ -1,3 +1,4 @@
 <h1>Dr. <%=@therapist.first_name %> <%= @therapist.last_name %></h1>
 <h3><%= @therapist.area_of_expertise %></h3>
 <p><%= @therapist.description %></p>
+<%= link_to "book a session", new_therapist_session_path(@therapist) %>
