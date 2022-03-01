@@ -13,9 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
 // External libraries
 @import "bootstrap/scss/bootstrap";
 //Internal libraries
 @import "therapists/index.scss";
 @import "components/index";
 @import "pages/show";
+@import "components/banner.scss";
+@import "config/font.scss";
