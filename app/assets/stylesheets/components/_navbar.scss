@@ -1,5 +1,5 @@
 .navbar {
-  background: #11a6d4;
+  background: #1192FD;
   border: none;
   width: 100%;
 }
@@ -12,8 +12,9 @@
   position: relative;
   height: 100px;
   width: 100%;
-  background: #11a6d4;
+  background:  #1192FD;
   margin-bottom: 50px;
+  // overflow-x: hidden;
 }
 #wave:before {
   content: "";
@@ -32,7 +33,7 @@
   border-radius: 100% 50%;
   width: 55%;
   height: 100%;
-  background-color: #11a6d4;
+  background: #1192FD;
   transform: translate(-4%, 40%);
   z-index: -1;
 }
