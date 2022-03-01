@@ -20,7 +20,7 @@
     color: #000000;
   }
 
-  .button {
+  .homepage_button {
     text-align: center;
     border-radius: 30px;
     padding: 15px 40px !important;
@@ -52,14 +52,13 @@ a {
     }
   }
 }
-.button-wrap{
+.homepage_button-wrap{
   display: flex;
   justify-content: space-evenly;
   margin: 50px 290px;
 
 }
-.button {
-
+.homepage_button {
   margin-right: 20px;
   color: #fff;
   line-height: 24px;
@@ -67,6 +66,4 @@ a {
   font-family: 'Raleway', sans-serif;
   padding: 14px 25px;
   border-radius: 1px;
-
-
 }
