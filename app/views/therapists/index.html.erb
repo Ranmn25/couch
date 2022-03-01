@@ -1,28 +1,16 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-sm-8">
-    <h1>Browse our therapists</h1>
+<div class="container therapists_index">
+  <h1>Browse our therapists</h1>
 
-    <%= form_tag therapists_path, method: :get do %>
-      <%= text_field_tag :query,
-        params[:query],
-        class: "form-control",
-        placeholder: "Find a therapist"
-      %>
-      <%= submit_tag "Search", class: "btn btn-primary" %>
-
-      <% end %>
-      <div id="therapists">
-        <% @therapists.each do |therapist| %>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title"><%= therapist.first_name %> <%= therapist.last_name %></h4>
-            <%= link_to 'View full profile', therapist_path(therapist) %>
-          </div>
-        </div>
-        <% end %>
+  <div class="therapists_main">
+    <% @therapists.each do |therapist| %>
+    <div class="therapists_cards">
+      <div class="therapist_card" style="#">
+        <img class="card__img" src="https://images.unsplash.com/photo-1506318164473-2dfd3ede3623?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3300&amp;q=80" alt="Canyons">
+        <h4 class="therapists_card__header">Dr. <%= therapist.first_name %> <%= therapist.last_name %></h4>
+        <p class="therapists_card__text">This is a therapist. This is a therapist. This is a therapist</p>
+        <p><%= link_to 'View full profile', therapist_path(therapist) %></p>
       </div>
     </div>
+    <% end %>
   </div>
 </div>
