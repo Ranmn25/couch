@@ -5,6 +5,7 @@ class TherapistsController < ApplicationController
 
   def show
     @therapist = User.find(params[:id])
+    @session = Session.new
   end
 
   private
