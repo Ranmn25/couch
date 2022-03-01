@@ -1,12 +1,12 @@
 class SessionsController < ApplicationController
   before_action :find_session, only: %i[show update]
-
   def index
     @applied_sessions = current_user.sessions
     @received_sessions = current_user.received_sessions
   end
 
-  def show; end
+  def show
+  end
 
   def new
     @session = Session.new
