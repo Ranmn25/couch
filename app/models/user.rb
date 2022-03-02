@@ -1,7 +1,8 @@
 class User < ApplicationRecord
   # belongs_to :therapist, class_name: 'User', foreign_key: 'user_id', optional: true
   # belongs_to :patient, class_name: 'User', foreign_key: 'user_id', optional: true
-
   has_many :therapist_sessions, class_name: 'Session', foreign_key: 'therapist_id'
   has_many :patient_sessions, class_name: 'Session', foreign_key: 'patient_id'
+
+  has_one_attached :photo
 end
