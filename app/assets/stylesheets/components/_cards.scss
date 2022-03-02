@@ -5,6 +5,8 @@
   background-color: #fff;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
   transition: .2s;
+  padding: 20px 15px;
+  align-items: center;
 }
 
 .main {
@@ -28,4 +30,8 @@
   line-height: 1.7;
   color: #404040;
   margin-bottom: 2rem;
+}
+
+.card_image {
+  margin-bottom: 1rem;
 }
