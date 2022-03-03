@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2022-02-27
+  time: 2022-02-27 18:09:06
+  status: MyString
+  patient: one
+  therapist: one
+
+two:
+  date: 2022-02-27
+  time: 2022-02-27 18:09:06
+  status: MyString
+  patient: two
+  therapist: two
