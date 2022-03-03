@@ -5,11 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
 require "open-uri"
 require 'faker'
 
 puts 'Cleaning database...'
 User.destroy_all
+
 puts 'Creating 5 patients'
 
 patient1 = { first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password: '123456', is_therapist: false }
@@ -74,4 +76,6 @@ therapisttwo.photo.attach(io: file2, filename: 'image2.png', content_type: 'imag
 therapistthree.photo.attach(io: file3, filename: 'image3.png', content_type: 'image/png')
 therapistfour.photo.attach(io: file4, filename: 'iamge4.png', content_type: 'image/png')
 therapistfive.photo.attach(io: file5, filename: 'iamge5.png', content_type: 'image/png')
+
+
 puts 'finished'
